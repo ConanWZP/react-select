@@ -23,7 +23,7 @@ const options = [
 // Имитация пропса, указывающий на множественный или одиночный выбор
 const isMulti = true
 
-const App = () => {
+const MultiSelect = () => {
 
     const [currentCountries, setCurrentCountries] = useState<any>(['canada', 'usa'])
 
@@ -54,4 +54,4 @@ const App = () => {
 }
 
 
-export default App;
+export default MultiSelect;

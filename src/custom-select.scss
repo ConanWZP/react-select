@@ -1,0 +1,88 @@
+@keyframes showingMenu {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.custom-select {
+  &__control {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid #4d4b4b !important;
+    box-shadow: none !important;
+
+    &--menu-is-open {
+      border-color: rgba(65, 201, 54, 0.49) !important;
+    }
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    cursor: text !important;
+  }
+  &__input-container {
+    color: #ece5e5 !important;
+  }
+
+  &__indicators {
+    cursor: pointer !important;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__indicator {
+    color: #807b7b !important;
+    &:hover {
+      color: #ece5e5 !important;
+    }
+  }
+
+
+  &__multi-value {
+    background-color: #5d5a5a !important;
+    border-radius: 8px !important;
+
+
+    &__label {
+      font-weight: 500 !important;
+      color: #cec7c7 !important;
+      font-size: 90% !important;
+    }
+    &__remove {
+      color: #cec7c7 !important;
+
+      &:hover {
+        color: white !important;
+        background-color: transparent !important;
+      }
+
+    }
+  }
+
+  &__menu {
+    background-color: #494747 !important;
+    color: #cec7c7 !important;
+    animation: showingMenu 300ms ease-in-out;
+  }
+
+  &__option {
+    cursor: pointer !important;
+    &--is-focused {
+      background-color: lighten(#494747, 10%) !important;
+    }
+  }
+
+
+
+}

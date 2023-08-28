@@ -19,7 +19,7 @@ const options = [
 
 
 
-const App = () => {
+const SingleSelect = () => {
 
     const [currentCountry, setCurrentCountry] = useState('canada')
 
@@ -40,4 +40,4 @@ const App = () => {
 }
 
 
-export default App;
+export default SingleSelect;
